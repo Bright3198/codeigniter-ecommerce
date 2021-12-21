@@ -89,3 +89,20 @@ $route['unpublished/slider/(:num)'] = 'slider/unpublished_slider/$1';
 //Theme Option  Route List
 $route['theme/option'] = 'themeoption';
 $route['save/option']  = 'themeoption/save_option';
+
+
+//manage user route socket_create_listen
+$route['manage/user'] = 'details/manage_user';
+$route['details/delete_user'] = 'details/delete_user';
+$route['details/edit_user'] = 'details/edit_user';
+
+//admin routes
+$route['add/seller'] = 'details/add_seller';
+$route['save/user'] = 'details/save_seller';
+
+//Seller login
+$route['seller']             = 'sellerlogin';
+$route['seller_login_check'] = 'SellerLogin/seller_login_check';
+$route['logout']            = 'seller/logout';
+ //seller panel
+ //$route['dashboard']            = 'Seller/index';
