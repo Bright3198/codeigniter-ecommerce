@@ -132,14 +132,7 @@
 
         <div class="clearfix"></div>
 
-        <footer>
-
-            <p> <center>
-                <span>&copy; <?php echo date("Y"); ?> Ecommerce CodeIgniter - Bootstrap Template By <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" style="color:white;" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
-
-            </p></center>
-
-        </footer>
+      
 
         <!-- start: JavaScript-->
 

@@ -57,7 +57,7 @@
                     <!-- start: Header Menu -->
                     <div class="nav-no-collapse header-nav">
                         <ul class="nav pull-right">
-                           
+
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                     <i class="halflings-icon white user"></i> <?php echo $this->session->userdata('user_name');?>
@@ -88,14 +88,14 @@
                 <div id="sidebar-left" class="span2">
                     <div class="nav-collapse sidebar-nav">
                         <ul class="nav nav-tabs nav-stacked main-menu">
-                            <li><a href="<?php echo base_url('dashboard')?>"><i class="icon-dashboard"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+                            <li><a href="<?php echo base_url('dashboard')?>"><i class="icon-dashboard"></i><span class="hidden-tablet"> Dashboard</span></a></li>
                             <li><a href="<?php echo base_url('add/category')?>"><i class="icon-th"></i><span class="hidden-tablet"> Add Category</span></a></li>
                             <li><a href="<?php echo base_url('manage/category')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> Manage Category</span></a></li>
                             <li><a href="<?php echo base_url('add/brand')?>"><i class="icon-edit"></i><span class="hidden-tablet"> Add Brand</span></a></li>
                             <li><a href="<?php echo base_url('manage/brand')?>"><i class="icon-list-alt"></i><span class="hidden-tablet"> Manage Brand</span></a></li>
                             <li><a href="<?php echo base_url('add/product')?>"><i class="icon-shopping-cart"></i><span class="hidden-tablet"> Add Product</span></a></li>
                             <li><a href="<?php echo base_url('manage/product')?>"><i class="icon-eye-open"></i><span class="hidden-tablet"> Manage Product</span></a></li>
-                          
+
                             <li><a href="<?php echo base_url('add/slider')?>"><i class="icon-font"></i><span class="hidden-tablet"> Add Slider</span></a></li>
                             <li><a href="<?php echo base_url('manage/slider')?>"><i class="icon-picture"></i><span class="hidden-tablet"> Manage Slider</span></a></li>
                             <li><a href="<?php echo base_url('theme/option');?>"><i class="icon-align-justify"></i><span class="hidden-tablet"> Theme Option</span></a></li>
@@ -111,9 +111,9 @@
                     <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
                 </div>
                 </noscript>
-                
+
                 <?php echo $maincontent;?>
-               
+
             </div><!--/#content.span10-->
         </div><!--/fluid-row-->
 
@@ -133,14 +133,7 @@
 
         <div class="clearfix"></div>
 
-        <footer>
-
-            <p> <center>
-                <span>&copy; <?php echo date("Y"); ?> Ecommerce CodeIgniter - Bootstrap Template By <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" style="color:white;" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
-
-            </p></center>
-
-        </footer>
+        
 
         <!-- start: JavaScript-->
 
