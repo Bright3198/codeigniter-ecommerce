@@ -26,7 +26,12 @@
                                 </div>
 
                                 <div>
-                                    <input type="text" name="customer_city" placeholder="Enter Your City">
+                                    <select id="region" name="customer_region" class="frm-field required">
+                                        <option value="null">Select a Region</option>
+                                        <option value="Central Region">Central Region</option>
+                                        <option value="Northern Region">Northern Region</option>
+                                        <option value="Southern Region">Southern Region</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <input type="text" name="customer_phone" placeholder="Enter Your Phone">
@@ -43,29 +48,38 @@
                                 </div>
                                 
                                 <div>
-                                    <select id="country" name="customer_country" class="frm-field required">
-                                        <option value="null">Select a Country</option>         
-                                        <option value="Afghanistan">Afghanistan</option>
-                                        <option value="Albania">Albania</option>
-                                        <option value="Algeria">Algeria</option>
-                                        <option value="Argentina">Argentina</option>
-                                        <option value="Armenia">Armenia</option>
-                                        <option value="Aruba">Aruba</option>
-                                        <option value="Australia">Australia</option>
-                                        <option value="Austria">Austria</option>
-                                        <option value="Azerbaijan">Azerbaijan</option>
-                                        <option value="Bahamas">Bahamas</option>
-                                        <option value="Bahrain">Bahrain</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="Netherland">Netherland</option>
-                                        <option value="USA">USA</option>
-
+                                    <select id="district" name="customer_district" class="frm-field required">
+                                        <option value="null">Select a District</option> 
+                                        <option value="Balaka">Balaka</option> 
+                                        <option value="Blantyre">Blantyre</option> 
+                                        <option value="Chikwawa">Chikwawa</option> 
+                                        <option value="Chiradzulu">Chiradzulu</option> 
+                                        <option value="Chitipa">Chitipa</option>
+                                        <option value="Dedza">Dedza</option> 
+                                        <option value="Dowa">Dowa</option>
+                                        <option value="Karonga">Karonga</option>
+                                        <option value="Kasungu">Kasungu</option>
+                                        <option value="Likoma">Likoma</option>
+                                        <option value="Lilongwe">Lilongwe</option>
+                                        <option value="Machinga">Machinga</option>
+                                        <option value="Mangochi">Mangochi</option>
+                                        <option value="Mchinji">Mchinji</option>
+                                        <option value="Mulanje">Mulanje</option>
+                                        <option value="Mwanza">Mwanza</option>
+                                        <option value="Mzimba">Mzimba</option>
+                                        <option value="Mzuzu">Mzuzu</option>
+                                        <option value="Nkhata-bay">Nkhata-bay</option>
+                                        <option value="Nkhota-kota">Nkhota-kota</option>
+                                        <option value="Nsanje">Nsanje</option>
+                                        <option value="Ntcheu">Ntcheu</option>
+                                        <option value="Ntchisi">Ntchisi</option>
+                                        <option value="Phalombe">Phalombe</option>
+                                        <option value="Rumphi">Rumphi</option>
+                                        <option value="Salima">Salima</option>
+                                        <option value="Thyolo">Thyolo</option> 
+                                        <option value="Zomba">Zomba</option>
                                     </select>
-                                </div>		
-
-                                <div>
-                                    <input type="text" name="customer_zipcode" placeholder="Enter Your ZipCode">
-                                </div>
+                                </div>	
                             </td>
                         </tr> 
                     </tbody></table> 
