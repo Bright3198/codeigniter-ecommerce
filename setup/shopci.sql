@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 29, 2021 at 07:16 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- Generation Time: Jan 06, 2022 at 10:18 AM
+-- Server version: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -84,10 +83,9 @@ CREATE TABLE `tbl_customer` (
   `customer_email` varchar(100) NOT NULL,
   `customer_password` varchar(32) NOT NULL,
   `customer_address` text NOT NULL,
-  `customer_city` varchar(50) NOT NULL,
-  `customer_zipcode` varchar(20) NOT NULL,
+  `customer_region` varchar(50) NOT NULL,
   `customer_phone` varchar(20) NOT NULL,
-  `customer_country` varchar(100) NOT NULL,
+  `customer_district` varchar(100) NOT NULL,
   `customer_active` tinyint(4) NOT NULL COMMENT 'Active=1,Unactive=0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -95,10 +93,12 @@ CREATE TABLE `tbl_customer` (
 -- Dumping data for table `tbl_customer`
 --
 
-INSERT INTO `tbl_customer` (`customer_id`, `customer_name`, `customer_email`, `customer_password`, `customer_address`, `customer_city`, `customer_zipcode`, `customer_phone`, `customer_country`, `customer_active`) VALUES
-(9, 'Christine', 'christine@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '458 Ralph Street', 'DEMO', '12500', '7458450000', 'Afghanistan', 1),
-(10, 'Bob Gardin', 'bobg@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '3556 Denver Avenue', 'Miram Loma', '3006', '7850002580', 'Australia', 1),
-(14, 'nyadani', 'nyadani@nyadani.com', '00a809937eddc44521da9521269e75c6', 'kffk', 'dwef', '2324', '099898', 'Afghanistan', 1);
+INSERT INTO `tbl_customer` (`customer_id`, `customer_name`, `customer_email`, `customer_password`, `customer_address`, `customer_region`, `customer_phone`, `customer_district`, `customer_active`) VALUES
+(9, 'Christine', 'christine@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '458 Ralph Street', 'DEMO', '7458450000', 'Afghanistan', 1),
+(10, 'Bob Gardin', 'bobg@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '3556 Denver Avenue', 'Miram Loma', '7850002580', 'Australia', 1),
+(14, 'nyadani', 'nyadani@nyadani.com', '00a809937eddc44521da9521269e75c6', 'kffk', 'dwef', '099898', 'Afghanistan', 1),
+(15, 'monia', 'monia@gmail.com', '06c56a89949d617def52f371c357b6db', 'box 20 LL', 'Lillongwe', '0883448716', 'USA', 1),
+(16, 'Grant Kabvalo', 'grant@gmail.com', '32250170a0dca92d53ec9624f336ca24', 'pass123', 'Central Region', '0998937126', 'Lilongwe', 1);
 
 -- --------------------------------------------------------
 
@@ -208,8 +208,8 @@ CREATE TABLE `tbl_product` (
   `product_category` int(11) NOT NULL,
   `product_brand` int(11) NOT NULL,
   `product_author` int(11) NOT NULL,
-  `product_view` int(11) NOT NULL DEFAULT 0,
-  `published_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `product_view` int(11) NOT NULL DEFAULT '0',
+  `published_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `publication_status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -264,8 +264,8 @@ CREATE TABLE `tbl_user` (
   `user_email` varchar(255) NOT NULL,
   `user_password` varchar(255) NOT NULL,
   `user_role` tinyint(4) NOT NULL,
-  `created_time` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_time` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -275,7 +275,13 @@ CREATE TABLE `tbl_user` (
 INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_email`, `user_password`, `user_role`, `created_time`, `updated_time`) VALUES
 (1, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1, '2017-11-13 16:31:36', '2017-11-13 16:31:36'),
 (2, 'editor', 'editor@gmail.com', '5aee9dbd2a188839105073571bee1b1f', 2, '2017-11-13 16:31:36', '2017-11-13 16:31:36'),
-(4, 'bright', 'bright@zuze.com', '81dc9bdb52d04dc20036dbd8313ed055', 2, '2021-12-20 14:15:22', '2021-12-20 14:15:22');
+(4, 'bright', 'bright@zuze.com', '81dc9bdb52d04dc20036dbd8313ed055', 2, '2021-12-20 14:15:22', '2021-12-20 14:15:22'),
+(5, 'patricia', 'patricia@gmail.com', '823fec7a2632ea7b498c1d0d11c11377', 2, '2022-01-04 07:20:13', '2022-01-04 07:20:13'),
+(6, 'martin', 'martin@gmail.com', '925d7518fc597af0e43f5606f9a51512', 2, '2022-01-04 07:21:27', '2022-01-04 07:21:27'),
+(7, 'mervis', 'mervis@gmail.com', '121f91f11ad6f1657efe9a80f62d6bae', 2, '2022-01-04 07:22:16', '2022-01-04 07:22:16'),
+(8, 'mercy', 'mercy@gmail.com', 'bf2ff2ed3c83c3c5ce510c4666f6fb0d', 2, '2022-01-04 07:23:39', '2022-01-04 07:23:39'),
+(9, 'mundie', 'mundie@gmail.com', '1340e9af989726830a79b2a92e0ff794', 2, '2022-01-04 07:24:24', '2022-01-04 07:24:24'),
+(10, 'monica', 'monica@gmail.com', 'ff0d813dd5d2f64dd372c6c4b6aed086', 2, '2022-01-04 07:26:49', '2022-01-04 07:26:49');
 
 -- --------------------------------------------------------
 
@@ -398,79 +404,66 @@ ALTER TABLE `user_role`
 --
 ALTER TABLE `tbl_brand`
   MODIFY `brand_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `tbl_messages`
 --
 ALTER TABLE `tbl_messages`
-  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
+  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_option`
 --
 ALTER TABLE `tbl_option`
   MODIFY `option_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_order_details`
 --
 ALTER TABLE `tbl_order_details`
-  MODIFY `order_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
+  MODIFY `order_details_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_payment`
 --
 ALTER TABLE `tbl_payment`
-  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
   MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
 --
 -- AUTO_INCREMENT for table `tbl_shipping`
 --
 ALTER TABLE `tbl_shipping`
-  MODIFY `shipping_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
+  MODIFY `shipping_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_slider`
 --
 ALTER TABLE `tbl_slider`
-  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
+  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
-  MODIFY `role_id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
+  MODIFY `role_id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
@@ -515,7 +508,6 @@ ALTER TABLE `tbl_shipping`
 --
 ALTER TABLE `tbl_user`
   ADD CONSTRAINT `tbl_user_ibfk_1` FOREIGN KEY (`user_role`) REFERENCES `user_role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
