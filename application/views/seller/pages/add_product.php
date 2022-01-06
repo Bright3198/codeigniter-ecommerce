@@ -58,7 +58,10 @@
                             <div class="controls">
                                 <input class="span6 typeahead" name="product_image" id="fileInput" type="file"/>
                             </div>
-                            <p>Max Size (4096mb), Max Width (2000px), Max Height (2000px) </p>
+                            <div class="control-group">
+                                <p>Max Size 4096mb, Max Width 2000px, Max Height 2000px</p>
+                            </div>
+                            
                         </div> 
                         
                         <div class="control-group">
