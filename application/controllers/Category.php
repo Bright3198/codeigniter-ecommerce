@@ -40,7 +40,7 @@ class Category extends CI_Controller
         if ($this->form_validation->run() == true) {
             $result = $this->category_model->save_category_info($data);
             if ($result) {
-                $this->session->set_flashdata('message', 'Category Inseted Sucessfully');
+                $this->session->set_flashdata('message', 'Category Inserted Sucessfully');
                 redirect('manage/category');
             } else {
                 $this->session->set_flashdata('message', 'Category Inserted Failed');

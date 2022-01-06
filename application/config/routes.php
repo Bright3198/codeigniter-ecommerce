@@ -89,3 +89,13 @@ $route['unpublished/slider/(:num)'] = 'slider/unpublished_slider/$1';
 //Theme Option  Route List
 $route['theme/option'] = 'themeoption';
 $route['save/option']  = 'themeoption/save_option';
+
+//Seller Login
+$route['seller']             = 'sellerlogin';
+$route['seller_login_check'] = 'sellerlogin/seller_login_check';
+$route['logout']            = 'seller/logout';
+
+//Seller Panel Route
+$route['sdashboard']            = 'admin/index';
+$route['smanage/order']         = 'manageorder/manage_order';
+$route['sorder/details/(:num)'] = 'manageorder/order_details/$1';

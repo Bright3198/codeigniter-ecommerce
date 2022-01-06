@@ -40,7 +40,7 @@ class Brand extends CI_Controller
         if ($this->form_validation->run() == true) {
             $result = $this->brand_model->save_brand_info($data);
             if ($result) {
-                $this->session->set_flashdata('message', 'Brand Inseted Sucessfully');
+                $this->session->set_flashdata('message', 'Brand Inserted Sucessfully');
                 redirect('manage/brand');
             } else {
                 $this->session->set_flashdata('message', 'Brand Inserted Failed');
