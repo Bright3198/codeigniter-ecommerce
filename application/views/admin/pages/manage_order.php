@@ -36,8 +36,8 @@
                         <tr>
                             <th>Sr.</th>
                             <th>Customer Name</th>
-                            <th>Customer Number</th>
-                            <th>Customer Phone</th>
+                            <th>Customer Phone Number</th>
+                            <th>Customer Email</th>
                             <th>Total Amount</th>
                             <th>Actions</th>
                         </tr>
@@ -53,7 +53,7 @@
                             <td><?php echo $single_order->customer_name?></td>
                             <td><?php echo $single_order->customer_phone?></td>
                             <td><?php echo $single_order->customer_email?></td>
-                            <td><?php echo $this->cart->format_number($single_order->order_total)?> Rs.</td>
+                            <td><?php echo $this->cart->format_number($single_order->order_total)?> MWK</td>
                             <td>
                                 
                                 <a class="btn btn-info" href="<?php echo base_url('order/details/'.$single_order->order_id);?>">View</a>

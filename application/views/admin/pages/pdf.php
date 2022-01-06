@@ -6,7 +6,7 @@
     <body>
         <div class="main">
             <div class="header_area">
-                <h1 align="center">Money Receipt</h1>
+                <h1 align="center">MONEY RECEIPT</h1>
             </div>
             <div class="voucher_address">
                 <div class="customer_address">
@@ -59,9 +59,9 @@
                             <th>Sr.</th>
                             <th>Product Name</th>
                             <th>Product Image</th>
-                            <th>Product Price</th>
+                            <th>Product Price (MWK)</th>
                             <th>Product Qty</th>
-                            <th>Product Subtotal</th>
+                            <th>Product Subtotal (MWK)</th>
                         </tr>
                     </thead>   
                     <tbody>
@@ -86,12 +86,12 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>= <?php echo $order_info->order_total ?> Rs.</td>
+                    <td>= <?php echo $order_info->order_total ?> MWK</td>
                     </tfoot>
                 </table>
             </div>
             <div class="footer_area">
-                <p align="center">Copyright By Rostom Ali</p>
+                <p align="center">Copyright By NSIKAWANGA</p>
             </div>
 
         </div>
