@@ -105,4 +105,4 @@ $route['seller']             = 'sellerlogin';
 $route['seller_login_check'] = 'SellerLogin/seller_login_check';
 $route['logout']            = 'seller/logout';
  //seller panel
- //$route['dashboard']            = 'Seller/index';
+$route['dashboard']            = 'Seller/index';
