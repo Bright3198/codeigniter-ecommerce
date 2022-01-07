@@ -36,20 +36,20 @@
                     <fieldset>
 
                         <div class="control-group">
-                            <label class="control-label" for="fileInput">Brand Name</label>
+                            <label class="control-label" for="fileInput">Brand name</label>
                             <div class="controls">
                                 <input class="span6 typeahead" name="brand_name" id="fileInput" type="text"/>
                             </div>
                         </div>          
                         <div class="control-group">
-                            <label class="control-label" for="textarea2">Brand Description</label>
+                            <label class="control-label" for="textarea2">Brand description</label>
                             <div class="controls">
                                 <textarea class="cleditor" id="textarea2" name="brand_description" rows="3"></textarea>
                             </div>
                         </div>
                         
                         <div class="control-group">
-                            <label class="control-label" for="textarea2">Publication Status</label>
+                            <label class="control-label" for="textarea2">Publication status</label>
                             <div class="controls">
                                 <select name="publication_status">
                                     <option value="1">Published</option>
