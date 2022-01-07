@@ -1220,7 +1220,7 @@ button.grey:hover,
 .product-desc h2,
 .product-tags h2 {
 	padding: 8px 20px;
-	background: red;
+	background: green;
 	border: 1px solid #ebe8e8;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -1488,7 +1488,7 @@ button.grey:hover,
 .span_1_of_3 .list li a {
 	font-size: 0.82em;
 	padding: 0.35em 1.2em;
-	color: #602d8d;
+	color: red;
 	background: url(../images/drop_arrow-hover.png) no-repeat 0px 10px;
 	display: block;
 }
