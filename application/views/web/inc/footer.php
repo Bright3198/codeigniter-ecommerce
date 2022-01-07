@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="copy_right">
-            <p><b><?php echo get_option('site_copyright');?></b></p>
+            <p><b>Msikawathu mw</b></p>
         </div>
     </div>
 </div>
