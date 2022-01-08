@@ -327,9 +327,9 @@ ALTER TABLE `tbl_customer`
 -- Indexes for table `tbl_messages`
 --
 ALTER TABLE `tbl_messages`
-  ADD PRIMARY KEY (`message_id`),
-  ADD KEY `fk_tbl_messages_1_idx` (`sender`),
-  ADD KEY `fk_tbl_messages_2_idx` (`receiver`);
+  ADD PRIMARY KEY (`message_id`);
+--  ADD KEY `fk_tbl_messages_1_idx` (`sender`),
+--  ADD KEY `fk_tbl_messages_2_idx` (`receiver`);
 
 --
 -- Indexes for table `tbl_option`
@@ -470,9 +470,9 @@ ALTER TABLE `user_role`
 --
 -- Constraints for table `tbl_messages`
 --
-ALTER TABLE `tbl_messages`
-  ADD CONSTRAINT `tbl_messages_ibfk_1` FOREIGN KEY (`sender`) REFERENCES `tbl_customer` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `tbl_messages_ibfk_2` FOREIGN KEY (`receiver`) REFERENCES `tbl_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+-- ALTER TABLE `tbl_messages`
+--   ADD CONSTRAINT `tbl_messages_ibfk_1` FOREIGN KEY (`sender`) REFERENCES `tbl_customer` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+--   ADD CONSTRAINT `tbl_messages_ibfk_2` FOREIGN KEY (`receiver`) REFERENCES `tbl_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `tbl_order`

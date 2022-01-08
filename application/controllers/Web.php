@@ -76,6 +76,34 @@ class Web extends CI_Controller
         $this->load->view('web/inc/footer');
     }
 
+    public function chat($id) 
+    {
+        $data = array();
+        $data['product_author'] = $id;
+        $data['customer_message'] = $this->input->post('message');
+        $customer_id = $this->session->userdata('customer_id');
+
+        if ($customer_id){
+            $data['messages'] = $this->message_model->get_messages($customer_id, $data['product_author']);
+
+            if ($data['customer_message'] != ''){
+                $message_data['message'] = $data['customer_message'];
+                $message_data['receiver'] = $data['product_author'];
+                $message_data['sender'] = $this->session->userdata('customer_id');
+
+                // Save message
+                $results = $this->message_model->save_message($message_data);
+                
+            } else {
+                // printf('no data');
+            }
+        }
+
+        $this->load->view('web/inc/header');
+        $this->load->view('web/pages/chat', $data);
+        $this->load->view('web/inc/footer');
+    }
+
     public function error()
     {
         $data = array();
@@ -372,14 +400,14 @@ class Web extends CI_Controller
                 $oddata['product_image']          = $oddatas['options']['product_image'];
                 $this->web_model->save_order_details_info($oddata);
             }
-
+            /*
             if ($payment_method == 'paypal') {
 
             }
             if ($payment_method == 'cashon') {
 
             }
-
+            */
             $this->cart->destroy();
 
             redirect('payment');

@@ -22,6 +22,11 @@
                             <input type="submit" class="buysubmit" name="submit" value="Buy Now"/>
                         </form>				
                     </div>
+
+                    <div>
+                        <a href="<?php echo base_url('chat/' . $get_single_product->product_author)?>" width="100px"> CHAT </a>
+                    </div>
+
                 </div>
                 <div class="product-desc">
                     <h2>Product Details</h2>

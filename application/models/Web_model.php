@@ -122,6 +122,12 @@ class Web_Model extends CI_Model
         return $info->row();
     }
 
+    public function get_customers_info(){
+        $sql_statement = "SELECT * FROM tbl_customer";
+        $query = $this->db->query($sql_statement);
+        return $query->result_array();
+    }
+
     public function save_payment_info($data)
     {
         $this->db->insert('tbl_payment', $data);
