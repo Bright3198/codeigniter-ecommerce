@@ -22,13 +22,15 @@
 
 
                                 <div>
-                                    <input type="text" name="shipping_city" placeholder="Enter Your City">
+                                    <select id="region" name="shipping_region" class="frm-field required">
+                                        <option value="null">Select a Region</option>
+                                        <option value="Central Region">Central Region</option>
+                                        <option value="Northern Region">Northern Region</option>
+                                        <option value="Southern Region">Southern Region</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <input type="text" name="shipping_phone" placeholder="Enter Your Phone">
-                                </div>
-                                <div>
-                                    <input type="text" name="shipping_zipcode" placeholder="Enter Your ZipCode">
                                 </div>
                             </td>
                             <td>
@@ -42,8 +44,8 @@
                                 </div>
                                 
                                 <div>
-                                    <select id="country" name="shipping_country" class="frm-field required">
-                                        <option value="null">Select District</option>         
+                                    <select id="district" name="shipping_district" class="frm-field required">
+                                        <option value="null">Select a District</option> 
                                         <option value="Balaka">Balaka</option> 
                                         <option value="Blantyre">Blantyre</option> 
                                         <option value="Chikwawa">Chikwawa</option> 
@@ -72,7 +74,6 @@
                                         <option value="Salima">Salima</option>
                                         <option value="Thyolo">Thyolo</option> 
                                         <option value="Zomba">Zomba</option>
-
                                     </select>
                                 </div>		
 
@@ -80,8 +81,8 @@
                             </td>
                         </tr> 
                     </tbody></table> 
-                <div class="search"><div><button class="grey">Submit</button></div></div>
-                <p class="terms">By clicking 'Submit' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
+                <div class="search"><div><button class="grey">Create Account</button></div></div>
+                <p class="terms">By clicking 'Create Account' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
                 <div class="clear"></div>
             </form>
         </div>  	
