@@ -257,19 +257,17 @@ class Web extends CI_Controller
         $data['customer_email']    = $this->input->post('customer_email');
         $data['customer_password'] = md5($this->input->post('customer_password'));
         $data['customer_address']  = $this->input->post('customer_address');
-        $data['customer_city']     = $this->input->post('customer_city');
-        $data['customer_country']  = $this->input->post('customer_country');
+        $data['customer_region']     = $this->input->post('customer_region');
+        $data['customer_district']  = $this->input->post('customer_district');
         $data['customer_phone']    = $this->input->post('customer_phone');
-        $data['customer_zipcode']  = $this->input->post('customer_zipcode');
 
         $this->form_validation->set_rules('customer_name', 'Customer Name', 'trim|required');
         $this->form_validation->set_rules('customer_email', 'Customer Email', 'trim|required|valid_email|is_unique[tbl_customer.customer_email]');
         $this->form_validation->set_rules('customer_password', 'Customer Password', 'trim|required');
         $this->form_validation->set_rules('customer_address', 'Customer Address', 'trim|required');
-        $this->form_validation->set_rules('customer_city', 'Customer City', 'trim|required');
-        $this->form_validation->set_rules('customer_country', 'Customer Country', 'trim|required');
+        $this->form_validation->set_rules('customer_region', 'Customer region', 'trim|required');
+        $this->form_validation->set_rules('customer_district', 'Customer district', 'trim|required');
         $this->form_validation->set_rules('customer_phone', 'Customer Phone', 'trim|required');
-        $this->form_validation->set_rules('customer_zipcode', 'Customer Zipcode', 'trim|required');
 
         if ($this->form_validation->run() == true) {
             $result = $this->web_model->save_customer_info($data);
@@ -301,18 +299,16 @@ class Web extends CI_Controller
         $data['shipping_name']    = $this->input->post('shipping_name');
         $data['shipping_email']   = $this->input->post('shipping_email');
         $data['shipping_address'] = $this->input->post('shipping_address');
-        $data['shipping_city']    = $this->input->post('shipping_city');
-        $data['shipping_country'] = $this->input->post('shipping_country');
+        $data['shipping_region']    = $this->input->post('shipping_region');
+        $data['shipping_district'] = $this->input->post('shipping_district');
         $data['shipping_phone']   = $this->input->post('shipping_phone');
-        $data['shipping_zipcode'] = $this->input->post('shipping_zipcode');
 
         $this->form_validation->set_rules('shipping_name', 'Shipping Name', 'trim|required');
         $this->form_validation->set_rules('shipping_email', 'Shipping Email', 'trim|required|valid_email|is_unique[tbl_shipping.shipping_email]');
         $this->form_validation->set_rules('shipping_address', 'Shipping Address', 'trim|required');
-        $this->form_validation->set_rules('shipping_city', 'Shipping City', 'trim|required');
-        $this->form_validation->set_rules('shipping_country', 'Shipping Country', 'trim|required');
+        $this->form_validation->set_rules('shipping_region', 'Shipping region', 'trim|required');
+        $this->form_validation->set_rules('shipping_district', 'Shipping district', 'trim|required');
         $this->form_validation->set_rules('shipping_phone', 'Shipping Phone', 'trim|required');
-        $this->form_validation->set_rules('shipping_zipcode', 'Shipping Zipcode', 'trim|required');
 
         if ($this->form_validation->run() == true) {
             $result = $this->web_model->save_shipping_address($data);
