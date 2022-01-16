@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2022 at 10:18 AM
+-- Generation Time: Jan 16, 2022 at 12:10 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -232,10 +232,9 @@ CREATE TABLE `tbl_shipping` (
   `shipping_name` varchar(50) NOT NULL,
   `shipping_email` varchar(100) NOT NULL,
   `shipping_address` text NOT NULL,
-  `shipping_city` varchar(100) NOT NULL,
-  `shipping_country` varchar(50) NOT NULL,
-  `shipping_phone` varchar(20) NOT NULL,
-  `shipping_zipcode` varchar(20) NOT NULL
+  `shipping_region` varchar(100) NOT NULL,
+  `shipping_district` varchar(50) NOT NULL,
+  `shipping_phone` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -501,7 +500,7 @@ ALTER TABLE `tbl_product`
 -- Constraints for table `tbl_shipping`
 --
 ALTER TABLE `tbl_shipping`
-  ADD CONSTRAINT `tbl_shipping_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `tbl_customer` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `tbl_shipping_fk` FOREIGN KEY (`customer_id`) REFERENCES `tbl_customer` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `tbl_user`
