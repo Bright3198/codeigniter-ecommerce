@@ -7,7 +7,7 @@ $route['404_override']         = 'web/error';
 $route['translate_uri_dashes'] = false;
 
 //Web Route
-
+$route['chat/(:num)'] = 'web/chat/$1';
 $route['product']             = 'web/product';
 $route['single/(:num)']       = 'web/single/$1';
 $route['contact']             = 'web/contact';
@@ -40,6 +40,10 @@ $route['check_email']                    = 'web/check_email';
 $route['dashboard']            = 'admin/index';
 $route['manage/order']         = 'manageorder/manage_order';
 $route['order/details/(:num)'] = 'manageorder/order_details/$1';
+
+//Chat Route List
+$route['chat'] = 'chat/index';
+$route['chat/with/(:num)'] = 'chat/chat_with/$1';
 
 //Category  Route List
 $route['add/category']                = 'category/add_category';

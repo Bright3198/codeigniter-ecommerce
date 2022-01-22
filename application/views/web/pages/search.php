@@ -49,8 +49,8 @@
 </div>
 <style>
     .content_pagi{padding:20px;border: 1px solid #EBE8E8;border-radius: 3px;}
-    .pagination{}
-    .pagination ul{}
+    .pagination{color: #000}
+    .pagination ul{color: #000}
     .pagination ul li{float: left}
     .pagination ul li a{color: #000;padding: 7px 12px;border: 1px solid #ddd;font-size: 18px;}
     .pagination ul li a:hover{background:#ddd;}

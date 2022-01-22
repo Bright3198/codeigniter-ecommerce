@@ -93,6 +93,7 @@
                             <li><a href="<?php echo base_url('manage/category')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> Manage Category</span></a></li>
                               <li><a href="<?php echo base_url('add/seller')?>"><i class="icon-eye-open"></i><span class="hidden-tablet"> Add Seller</span></a></li>
                             <li><a href="<?php echo base_url('manage/user')?>"><i class="icon-eye-open"></i><span class="hidden-tablet"> Manage User</span></a></li>
+                            <li><a href="<?php echo base_url('chat')?>"><i class="icon-eye-open"></i><span class="hidden-tablet"> Chat </span></a></li>
 
 
                             <li><a href="<?php echo base_url('add/slider')?>"><i class="icon-font"></i><span class="hidden-tablet"> Add Slider</span></a></li>
