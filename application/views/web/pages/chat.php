@@ -3,7 +3,7 @@
 <div class="main">
     <div class="content">
         <div class="section group">
-            <h2> This is a chat view </h2>
+            <h2 style="text-align:center;"> This is a chat view </h2>
             <h3>
                 <?php
                     $customer_id = $this->session->userdata('customer_id');
