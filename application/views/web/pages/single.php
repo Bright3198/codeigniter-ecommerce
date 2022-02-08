@@ -24,7 +24,7 @@
                     </div>
 
                     <div>
-                        <a href="<?php echo base_url('chat/' . $get_single_product->product_author)?>" width="100px"> CHAT </a>
+                        <a href="<?php echo base_url('chat/' . $get_single_product->product_author)?>" class=" buysubmits" > CHAT</a>
                     </div>
 
                 </div>
