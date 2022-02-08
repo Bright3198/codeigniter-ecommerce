@@ -94,11 +94,14 @@
                     echo "active";
                 }
                 ?>">Contact</a>
+    <?php if(!$this->session->userdata('customer_id')){?>
   <a href="<?php echo base_url('/customer/register'); ?>" class=" <?php
                 if ($this->uri->uri_string() == 'customer/register') {
                     echo "active";
                 }
                 ?>">register</a>
+    <?php }?>
+
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <script>
