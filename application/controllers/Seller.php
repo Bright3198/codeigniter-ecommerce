@@ -30,7 +30,7 @@ class Seller extends CI_Controller
 
     }
 
-  
+
 
 
     public function logout()

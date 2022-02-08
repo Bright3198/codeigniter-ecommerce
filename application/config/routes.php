@@ -106,7 +106,7 @@ $route['save/user'] = 'details/save_seller';
 
 //Seller login
 $route['seller']             = 'sellerlogin';
-$route['seller_login_check'] = 'SellerLogin/seller_login_check';
+$route['seller_login_check'] = 'sellerlogin/seller_login_check';
 $route['logout']            = 'seller/logout';
 
-$route['dashboard']            = 'Seller/index';
+$route['dashboard_1']            = 'seller/index';

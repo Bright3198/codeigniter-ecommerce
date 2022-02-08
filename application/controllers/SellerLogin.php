@@ -33,7 +33,7 @@ class SellerLogin extends CI_Controller
                 $this->session->set_userdata('user_email', $result->user_email);
                 $this->session->set_userdata('user_name', $result->user_name);
                 $this->session->set_userdata('user_id', $result->user_id);
-                redirect('dashboard');
+                redirect('dashboard_1');
             } else {
                 $this->session->set_flashdata('message', 'Your Email Or Password Does Not Match');
                 redirect('seller');
@@ -53,7 +53,7 @@ class SellerLogin extends CI_Controller
         $id    = $this->session->userdata('user_id');
 
         if ($email == true) {
-            redirect('dashboard');
+            redirect('dashboard_1');
         }
 
     }
