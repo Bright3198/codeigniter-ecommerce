@@ -1892,25 +1892,44 @@ table.tblone img {
 @media only screen and (max-width: 800px) {
 	.wrap {
 		width: 90%;
-		padding: 0 2%;
+	
+	}
+	.header_top_right{
+		float: inherit;
+		width: 100%;
+		margin-top: 2%;
+	}
+	.logo {
+	  float: inherit;
+      width: 100%;
+      text-align: center;
+     } 
+	.search_box {
+		float: inherit;
+		width: 99%;
 	}
 	.search_box form input[type="text"] {
-		width: 183px;
+		width: 70.5%;
+	}
+	.search_box form input[type="submit"] {
+		width: 30%;
 	}
 	.shopping_cart {
-		width: 180px;
+		
+		width: 50%;
+        margin-left: -2px;
+        margin-top: 8px;
 	}
-	.shopping_cart {
-		margin-left: 5px;
-	}
+	
 	.wrapper-dropdown {
 		margin-left: 5px;
 		margin-top: 5px;
 		width: 55px;
 	}
 	.login {
-		margin-left: 5px;
-		margin-top: 5px;
+		margin-left: 127px;
+		margin-top: 8px;
+		width: 30%;
 	}
 	.list_2_of_1 .button a {
 		padding: 5px 10px;
@@ -2141,7 +2160,7 @@ table.tblone img {
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 660px) {
 	.wrap {
 		width: 90%;
 	}
@@ -2158,20 +2177,18 @@ table.tblone img {
 	}
 	.search_box {
 		float: inherit;
-		width: 100%;
+		width: 99%;
 	}
 	.search_box form input[type="text"] {
-		width: 78.5%;
+		width: 70.5%;
 	}
 	.search_box form input[type="submit"] {
-		width: 18.5%;
+		width: 38.5%;
 	}
+	
 	.shopping_cart {
-		width: 16.5%;
-	}
-	.shopping_cart {
-		width: 65.66%;
-		margin-left: 0px;
+		width: 50%;
+		margin-left: -2px;
 		margin-top: 8px;
 	}
 	.wrapper-dropdown {
@@ -2180,8 +2197,9 @@ table.tblone img {
 		width: 55px;
 	}
 	.login {
-		margin-left: 5px;
+		margin-left: 1px;
 		margin-top: 8px;
+		width: 50%;
 	}
 	.list_2_of_1 .button a {
 		padding: 5px 10px;
@@ -2423,20 +2441,20 @@ table.tblone img {
 	}
 	.search_box {
 		float: inherit;
-		width: 100%;
+		width: 99%;
 	}
 	.search_box form input[type="text"] {
-		width: 77.5%;
+		width: 70.5%;
 	}
 	.search_box form input[type="submit"] {
-		width: 18.5%;
+		width: 38.5%;
 	}
 	.shopping_cart {
 		width: 16.5%;
 	}
 	.shopping_cart {
-		width: 55.55%;
-		margin-left: 0px;
+		width: 50%;
+		margin-left: -2px;
 		margin-top: 8px;
 	}
 	.wrapper-dropdown {
@@ -2445,8 +2463,9 @@ table.tblone img {
 		width: 55px;
 	}
 	.login {
-		margin-left: 5px;
+		margin-left: 1px;
 		margin-top: 8px;
+		width: 50%;
 	}
 	.list_2_of_1 .button a {
 		padding: 5px 10px;
