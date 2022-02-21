@@ -412,6 +412,12 @@ input[type="number"] {
 	margin: 6px 0;
 	width: 92%;
 }
+.login_panel{
+	
+	text-align: center;
+	display: inline-block;
+	float: none;
+}
 .login_panel form {
 	margin: 15px 0;
 }
@@ -1694,7 +1700,7 @@ table.tblone img {
 .shopleft {
 	float: left;
 	text-align: center;
-	width: 610px;
+	width: 50%;
 }
 .shopleft img {
 	outline: none;
@@ -1890,6 +1896,7 @@ table.tblone img {
 	}
 }
 @media only screen and (max-width: 800px) {
+	
 	.wrap {
 		width: 90%;
 	
@@ -2161,6 +2168,12 @@ table.tblone img {
 }
 
 @media only screen and (max-width: 660px) {
+	.login_panel{
+		width: 90%;
+		text-align: center;
+		display: inline-block;
+		float: none;
+	}
 	.wrap {
 		width: 90%;
 	}
@@ -2737,6 +2750,32 @@ table.tblone img {
 }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 480px) {
+	
+	.login_panel{
+		width: 90%;
+		text-align: center;
+		display: inline-block;
+		float: none;
+	}
+
+	.shopleft,
+.shopleft {
+	
+	width: 70%;
+	padding-left: 50px;
+}
+.shopleft img {
+	outline: none;
+}
+.shopleft a,
+.shopright a {
+	outline: none;
+}
+.shopright img {
+	width: 70%;
+	padding-left: 50px;
+}
+
 	.cont-desc {
 		margin: 2% 0 2% 0%;
 	}
