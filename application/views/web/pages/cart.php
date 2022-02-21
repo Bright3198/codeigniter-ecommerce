@@ -6,6 +6,7 @@
             <div class="cartpage">
                 <h2>Your Cart</h2>
                 <?php if ($this->cart->total_items()) { ?>
+                    <div style="overflow-x:auto;">
                     <table class="tblone">
                         <tr>
                             <th width="5%">Sr.</th>
@@ -44,7 +45,12 @@
                         <?php } ?>
 
 
+                    
+                    
+
                     </table>
+                        </div>
+                        <div style="overflow-x:auto;">
                     <table style="float:right;text-align:left;" width="40%">
                         <tr>
                             <th>Sub Total : </th>
@@ -65,6 +71,7 @@
                             <td>K <?php echo $this->cart->format_number($tax + $this->cart->total()); ?> </td>
                         </tr>
                     </table>
+                        </div>
                     <?php
                 } else {
                     echo "<h1>Your Cart Empty</h1>";
