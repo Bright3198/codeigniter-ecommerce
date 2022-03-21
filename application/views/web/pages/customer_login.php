@@ -2,7 +2,7 @@
 
 <div class="main">
     <div class="content" style="text-align: center">
-         <div class="login_panel" style="width:400px;text-align:center;display:inline-block;float: none">
+         <div class="login_panel">
             <h3>Existing Customers</h3>
             <p>Sign in with the form below.</p>
             <style type="text/css">
